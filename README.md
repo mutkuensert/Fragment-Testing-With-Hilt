@@ -8,14 +8,23 @@
 ## Table of Contents
 * [About The Project](#about-the-project)
 * [Tech](#tech)
+* [How to](#how-to)
+* [Test Result](#test-result)
 * [Contact](#contact)
 
 
 ## About The Project
 This is a project that has been created in order to explain launching a fragment with hilt in a test and testing the screen.
 
+
 ## How to
 Click on this [blog article link](https://mutkuensert.blogspot.com/2022/09/hilt-kullanlan-projede-fragment-testi.html) to read my explanation of how to make this test.(Written in Turkish)
+
+
+## Test Result
+<div align="left">
+ <img src="docs/testresult.png" width="230"/>
+</div>
 
 
 ## Tech

@@ -5,12 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".ui.MainActivity">
 
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainerView"
-        android:name="com.mutkuensert.fragmenttestingwithhilt.MainFragment"
+        android:name="com.mutkuensert.fragmenttestingwithhilt.ui.MainFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>

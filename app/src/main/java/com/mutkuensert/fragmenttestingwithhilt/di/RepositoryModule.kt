@@ -1,7 +1,7 @@
 package com.mutkuensert.fragmenttestingwithhilt.di
 
-import android.app.Application
 import com.mutkuensert.fragmenttestingwithhilt.data.source.ImagesRepository
+import com.mutkuensert.fragmenttestingwithhilt.data.source.RequestService
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -14,7 +14,7 @@ object RepositoryModule {
 
     @Singleton
     @Provides
-    fun providesImagesRepository(app: Application): ImagesRepository{
-        return ImagesRepository(app)
+    fun providesImagesRepository(requestService: RequestService): ImagesRepository{
+        return ImagesRepository(requestService)
     }
 }

@@ -2,6 +2,7 @@ package com.mutkuensert.fragmenttestingwithhilt.di
 
 import com.mutkuensert.fragmenttestingwithhilt.data.FakeImagesRepository
 import com.mutkuensert.fragmenttestingwithhilt.data.source.ImagesRepository
+import com.mutkuensert.fragmenttestingwithhilt.data.source.RequestService
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.components.SingletonComponent
@@ -17,7 +18,7 @@ object FakeImagesRepositoryModule {
 
     @Singleton
     @Provides
-    fun providesFakeImagesRepository(): ImagesRepository{
-        return FakeImagesRepository()
+    fun providesFakeImagesRepository(requestService: RequestService): ImagesRepository{
+        return FakeImagesRepository(requestService)
     }
 }

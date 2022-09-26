@@ -1,10 +1,10 @@
 package com.mutkuensert.fragmenttestingwithhilt.data
 
-import androidx.test.core.app.ApplicationProvider
 import com.mutkuensert.fragmenttestingwithhilt.data.source.ImagesRepository
+import com.mutkuensert.fragmenttestingwithhilt.data.source.RequestService
 import com.mutkuensert.fragmenttestingwithhilt.util.Resource
 
-class FakeImagesRepository: ImagesRepository(ApplicationProvider.getApplicationContext()) {
+class FakeImagesRepository(requestService: RequestService): ImagesRepository(requestService) {
     private var lastId = 0
 
     override suspend fun requestImages(search: String, page: Int): Resource<ImagesModel> {

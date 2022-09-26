@@ -1,12 +1,7 @@
 package com.mutkuensert.fragmenttestingwithhilt.data.source
 
-import android.content.Context
 import com.mutkuensert.fragmenttestingwithhilt.data.ImagesModel
 import com.mutkuensert.fragmenttestingwithhilt.util.Resource
-import dagger.hilt.EntryPoint
-import dagger.hilt.InstallIn
-import dagger.hilt.android.EntryPointAccessors
-import dagger.hilt.components.SingletonComponent
 import javax.inject.Inject
 
 open class ImagesRepository @Inject constructor(private val requestService: RequestService){

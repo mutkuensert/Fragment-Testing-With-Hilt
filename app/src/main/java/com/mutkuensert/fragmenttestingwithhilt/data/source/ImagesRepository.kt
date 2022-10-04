@@ -2,9 +2,8 @@ package com.mutkuensert.fragmenttestingwithhilt.data.source
 
 import com.mutkuensert.fragmenttestingwithhilt.data.ImagesModel
 import com.mutkuensert.fragmenttestingwithhilt.util.Resource
-import javax.inject.Inject
 
-open class ImagesRepository @Inject constructor(private val requestService: RequestService){
+open class ImagesRepository(private val requestService: RequestService){
 
     open suspend fun requestImages(search: String, page: Int): Resource<ImagesModel>{
         val response = requestService.searchImageRequest(
